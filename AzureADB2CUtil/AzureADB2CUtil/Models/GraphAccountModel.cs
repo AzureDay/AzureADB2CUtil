@@ -10,7 +10,7 @@ namespace AADB2C.GraphService
     public class GraphAccountModel
     {
         public string id { get; set; }
-        public string mail { get; set; }
+        public IEnumerable<string> otherMails { get; set; }
         public string givenName { get; set; }
         public string surname { get; set; }
 

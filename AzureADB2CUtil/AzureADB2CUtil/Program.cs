@@ -64,7 +64,7 @@ namespace AzureADB2CUtil
                         var item = new CsvItem
                         {
                             Id = account.id,
-                            Email = account.mail,
+                            Email = account.otherMails.FirstOrDefault(),
                             FirstName = account.givenName,
                             LastName = account.surname,
                         };
@@ -77,7 +77,7 @@ namespace AzureADB2CUtil
                         var item = new CsvItem
                         {
                             Id = account.id,
-                            Email = account.mail,
+                            Email = account.otherMails.FirstOrDefault(),
                             FirstName = account.givenName,
                             LastName = account.surname,
                             TicketType = ticket.TicketType,

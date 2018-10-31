@@ -22,7 +22,7 @@ namespace AADB2C.GraphService
 
         public readonly string aadInstance = "https://login.microsoftonline.com/";
         public readonly string aadGraphResourceId = "https://graph.microsoft.com/";
-        public readonly string aadGraphEndpoint = "https://graph.microsoft.com/v1.0/";
+        public readonly string aadGraphEndpoint = "https://graph.microsoft.com/beta/";
 
         public string Tenant { get; }
         public string ClientId { get; }
