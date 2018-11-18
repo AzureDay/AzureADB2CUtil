@@ -9,10 +9,10 @@ namespace AADB2C.GraphService
 {
     public class GraphAccountModel
     {
-        public string id { get; set; }
-        public IEnumerable<string> otherMails { get; set; }
-        public string givenName { get; set; }
-        public string surname { get; set; }
+        public string Id { get; set; }
+        public IEnumerable<string> OtherMails { get; set; }
+        public string GivenName { get; set; }
+        public string Surname { get; set; }
 
         public static GraphAccountModel Parse(string JSON)
         {
