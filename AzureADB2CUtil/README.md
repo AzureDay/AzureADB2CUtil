@@ -6,7 +6,7 @@
 
 ## 3. Set up continuous deployment from GitHub
 
-    https://docs.microsoft.com/en-us/azure/app-service/app-service-continuous-deployment#deploy-continuously-from-github
+https://docs.microsoft.com/en-us/azure/app-service/app-service-continuous-deployment#deploy-continuously-from-github
 
 ## 4. Set application environment variables 
 
@@ -16,4 +16,4 @@
 
 ## 5. Setup Azure Web App Authentication and authorization 
 
-    https://docs.microsoft.com/en-us/azure/app-service/app-service-authentication-overview#authorization-behavior
+https://docs.microsoft.com/en-us/azure/app-service/app-service-authentication-overview#authorization-behavior
