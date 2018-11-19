@@ -1,3 +1,7 @@
+# About
+
+Util to collect Azure AD B2C users
+
 # How to use
 
 ## 1. Create new Azure Web App
