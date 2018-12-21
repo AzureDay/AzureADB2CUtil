@@ -18,5 +18,9 @@ namespace AzureADB2CUtil.Models
         public double Price { get; set; }
 
         public string PaymentType { get; set; }
+        
+        public string City { get; set; }
+        public string Company { get; set; }
+        public string JobTitle { get; set; }
     }
 }

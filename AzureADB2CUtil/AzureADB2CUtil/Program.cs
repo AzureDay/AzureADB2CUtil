@@ -17,16 +17,20 @@ namespace AzureADB2CUtil
     {
         static async Task Main(string[] args)
         {
-            var b2cGraphClient = new B2CGraphClient("AdTenant",
-                "ClientId",
-                "ClientKey");
+            var tenantName = "";
+            var applicationId = "";
+            var clientSecret = "";
+            
+            var storageName = "";
+            var storagekey = "";
+            
+            var b2cGraphClient = new B2CGraphClient(tenantName, applicationId, clientSecret);
 
             var response = await b2cGraphClient.GetAllUsersAsync();
 
             var accounts = GraphAccounts.Parse(response);
-            
-            CloudStorageAccount storageAccount = new CloudStorageAccount(
-                new StorageCredentials("storageName", "storageKey"), true);
+
+            CloudStorageAccount storageAccount = new CloudStorageAccount(new StorageCredentials(storageName, storagekey), true);
 
             //Client
             CloudTableClient tableClient = storageAccount.CreateCloudTableClient();
@@ -85,7 +89,10 @@ namespace AzureADB2CUtil
                             IsPayed = ticket.IsPayed,
                             PaymentType = ticket.PaymentType,
                             Price = ticket.Price,
-                            WorkshopId = ticket.WorkshopId
+                            WorkshopId = ticket.WorkshopId,
+                            City = account.city,
+                            Company = account.extension_d6245cc8578e4908b91662ccd12132e2_Company,
+                            JobTitle = account.jobTitle
                         };
                         
                         csv.WriteRecord(item);
