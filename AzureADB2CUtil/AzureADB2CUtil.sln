@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureADB2CUtil", "AzureADB2CUtil\AzureADB2CUtil.csproj", "{BF2604F8-0991-4B55-9507-D4B85167616F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphUsersApp", "GraphUsersApp\GraphUsersApp.csproj", "{2FB4877F-D3E0-4683-92C3-AC172EDBD644}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{BF2604F8-0991-4B55-9507-D4B85167616F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF2604F8-0991-4B55-9507-D4B85167616F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF2604F8-0991-4B55-9507-D4B85167616F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FB4877F-D3E0-4683-92C3-AC172EDBD644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FB4877F-D3E0-4683-92C3-AC172EDBD644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FB4877F-D3E0-4683-92C3-AC172EDBD644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FB4877F-D3E0-4683-92C3-AC172EDBD644}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

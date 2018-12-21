@@ -61,16 +61,16 @@ namespace AzureADB2CUtil
 
                 foreach (var account in accounts.value)
                 {
-                    var tickets = results.Where(x => x.AttendeeId == account.id);
+                    var tickets = results.Where(x => x.AttendeeId == account.Id);
 
                     if (tickets.Count() == 0)
                     {
                         var item = new CsvItem
                         {
-                            Id = account.id,
-                            Email = account.otherMails.FirstOrDefault(),
-                            FirstName = account.givenName,
-                            LastName = account.surname,
+                            Id = account.Id,
+                            Email = account.OtherMails.FirstOrDefault(),
+                            FirstName = account.GivenName,
+                            LastName = account.Surname,
                         };
                         csv.WriteRecord(item);
                         csv.NextRecord();
@@ -80,10 +80,10 @@ namespace AzureADB2CUtil
                     {
                         var item = new CsvItem
                         {
-                            Id = account.id,
-                            Email = account.otherMails.FirstOrDefault(),
-                            FirstName = account.givenName,
-                            LastName = account.surname,
+                            Id = account.Id,
+                            Email = account.OtherMails.FirstOrDefault(),
+                            FirstName = account.GivenName,
+                            LastName = account.Surname,
                             TicketType = ticket.TicketType,
                             CouponCode = ticket.CouponCode,
                             IsPayed = ticket.IsPayed,
